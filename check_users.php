@@ -205,6 +205,7 @@ try {
 			$output .= ' ('.implode(', ', $actualUsers).')';
 		}
 	} else {
+		$status = NAGIOS_WARNING;
 		$output .= 'USERS WARNING - '.$warningUsersCount.'';
 		if ($warningUsersCount !== $actualUsersCount) {
 			$output .= ' of '.$actualUsersCount.'';
