@@ -57,8 +57,9 @@ try {
 
 		if ($i === 1) {
 			// 13:13:47 up 191 days, 22:40,  2 users,  load average: 1.12, 1.44, 1.22
+			// 14:56:00 up 191 days, 23:20,  1 user,  load average: 0.04, 0.08, 0.14
 			// 14:10  up 13 days,  3:16, 76 users, load averages: 4,78 6,04 6,74
-			if (!preg_match('/^.*users.*load average.*$/', $row, $matches)) {
+			if (!preg_match('/^.*users?.*load averages?.*$/', $row, $matches)) {
 				echo 'Couldn\'t retrieve output from w: first row does not match rules'."\n";
 				exit(NAGIOS_UNKNOWN);
 			}
