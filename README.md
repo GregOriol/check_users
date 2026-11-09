@@ -16,7 +16,7 @@ Nagios configuration:
 ```
 define command {
         command_name    check_by_ssh_check_users
-        command_line    $USER1$/check_by_ssh -H $HOSTADDRESS$ -p 143 -C "php /home/nagios/check_users/check_users.php --device $ARG1$"
+        command_line    $USER1$/check_by_ssh -H $HOSTADDRESS$ -p 143 -C "php /home/nagios/check_users/check_users.php --ok $ARG1$"
 }
 
 define service {
