@@ -1,0 +1,4 @@
+ 11:10:34 up 191 days, 20:32,  3 users,  load average: 0.86, 0.95, 0.80
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU  WHAT
+nagios            2001:41d0:8:1631 11:17    1:21m  0.00s  0.01s sshd: nagios [priv]
+root              2a01:cb00:38a:e1 10:58    1:21m  0.00s  0.94s sshd: root@pts/0
