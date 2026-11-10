@@ -101,14 +101,14 @@ try {
 					if ($regex !== '') {
 						$regex .= '[ ]+';
 					}
-					$regex .= '([0-9a-z:.-]+)';
+					$regex .= '([0-9a-z:.-]+| )';
 					$regexMatches[$column] = $j;
 				}
 				elseif ($column === 'LOGIN@') {
 					if ($regex !== '') {
 						$regex .= '[ ]+';
 					}
-					$regex .= '([0-9a-z:.]+)';
+					$regex .= '([0-9a-zA-Z:.]+)';
 					$regexMatches[$column] = $j;
 				}
 				elseif ($column === 'IDLE') {
@@ -145,7 +145,7 @@ try {
 
 			// var_dump($regex);
 			// var_dump($regexMatches);
-		} else/*if ($i === 3)*/ {
+		} else {
 			// root              2a01:cb00:38a:e1 10:54    5:01m  0.00s  0.67s sshd: root@pts/0
 			// fortin     console  -      27oct.2 13days -
 			// fortin     s000     -      27oct.2 2days -bash
